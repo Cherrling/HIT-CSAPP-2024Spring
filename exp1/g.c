@@ -14,10 +14,12 @@ int main() {
     int n;
     printf("input n: ");
     scanf("%d", &n);
+    for (int i=1; i<n+1; i++) {
 
+        double g = fibonacci_ratio(i);
+        printf("当n=%d时，黄金分割数 g 的值为 %.8lf\n", i, g);
+    }
 
-    double g = fibonacci_ratio(n);
-    printf("当n=%d时，黄金分割数 g 的值为 %.8lf\n", n, g);
 
     return 0;
 }
