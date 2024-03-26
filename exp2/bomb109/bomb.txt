@@ -323,7 +323,7 @@ Disassembly of section .text:
   40141d:	48 8d 75 d0          	lea    -0x30(%rbp),%rsi
   401421:	e8 28 05 00 00       	call   40194e <read_six_numbers>
   401426:	83 7d d0 00          	cmpl   $0x0,-0x30(%rbp)
-  40142a:	75 06                	jne    401432 <phase_2+0x1e>
+  40142a:	75 06                	jne    401432 <phase_2+0x1e>//爆
   40142c:	83 7d d4 01          	cmpl   $0x1,-0x2c(%rbp)
   401430:	74 05                	je     401437 <phase_2+0x23>
   401432:	e8 f5 04 00 00       	call   40192c <explode_bomb>
@@ -342,7 +342,7 @@ Disassembly of section .text:
   40145d:	03 44 8d d0          	add    -0x30(%rbp,%rcx,4),%eax
   401461:	39 44 95 d0          	cmp    %eax,-0x30(%rbp,%rdx,4)
   401465:	74 dc                	je     401443 <phase_2+0x2f>
-  401467:	eb d5                	jmp    40143e <phase_2+0x2a>
+  401467:	eb d5                	jmp    40143e <phase_2+0x2a>//爆
   401469:	48 83 c4 28          	add    $0x28,%rsp
   40146d:	5b                   	pop    %rbx
   40146e:	5d                   	pop    %rbp
